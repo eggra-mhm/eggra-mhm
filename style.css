@@ -1,0 +1,173 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Basic body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Faculty Glyphic', sans-serif;
+    color: #141414;
+    background-color: #d6e2e0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    max-height: 700px;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    background-color: #d6e2e0;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+.logo {
+    visibility: hidden;
+    max-height: 100px;
+    height: auto;
+    width: auto;
+}
+
+.scrolling-header {
+    position: relative;
+    height: 75px; /* Adjust header height */
+    overflow: hidden; /* Hide overflow outside the header */
+}
+
+.scrolling-background {
+    position: absolute;
+    top: 1;
+    left: 0;
+    width: 200%; /* Twice the width for seamless scrolling */
+    height: calc(90% - 10px);
+    background: url('photos/wotc\ logo.svg') repeat-x; /* Tiling the image horizontally */
+    background-size: contain; /* Adjust this based on your image dimensions */
+    animation: scroll-sideways 10s linear infinite; /* Scroll animation */
+}
+
+@keyframes scroll-sideways {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.pillar {
+    position: fixed; /* Sticks to the viewport */
+    width: 180px; /* Adjust to your pillar width */
+    top: 10px; /* Space at the top */
+    height: calc(100vh + 5%);
+    background: url('photos/pillar.png') no-repeat center/cover; /* Image styling */
+    z-index: 10; /* Ensure it's above other elements */
+    box-sizing: border-box; /* Account for padding/margins */
+    overflow: hidden; /* Prevent content spill */
+}
+
+.pillar.left {
+    left: 10px; /* Space from the left edge */
+}
+
+.pillar.right {
+    right: 10px; /* Space from the right edge */
+}
+
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+    .pillar {
+        display: none; /* Hide the pillars on small screens */
+    }
+}
+
+/* Main content area */
+.content {
+    width: 80%;
+    padding: 50;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+/* "How It Works" Section */
+.how-it-works {
+    border: 2px solid #141414;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.email-signup {
+    margin-top: 10px;
+}
+
+.email-signup input {
+    font-family: 'Faculty Glyphic', sans-serif;
+    background-color: #c4cdc4;
+    color: #141414;
+    padding: 5px;
+}
+
+.email-signup button {
+    font-family: 'Faculty Glyphic', sans-serif;
+    background-color: #d6e2e0;
+    color: #141414;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+/* Live Stream Section */
+.live-stream {
+    border: 2px solid #141414;
+    padding: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/* Comment Box */
+.comment-box {
+    margin-bottom: 20px;
+}
+
+.comment-box textarea {
+    font-family: 'Faculty Glyphic', sans-serif;
+    background-color: #c4cdc4;
+    color: #141414;
+    width: 90%;
+    height: 50px;
+}
+
+/* Auction Link */
+.auction {
+    border: 2px solid #141414;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #d6e2e0;
+    margin-top: 20px;
+}
+
+
+
+/* Example styling for main content */
+.content {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
