@@ -49,7 +49,7 @@ header {
     left: 0;
     width: 200%; /* Twice the width for seamless scrolling */
     height: calc(90% - 10px);
-    background: url('photos/wotc\ logo.svg') repeat-x; /* Tiling the image horizontally */
+    background: url('wotc logo.svg') repeat-x; /* Tiling the image horizontally */
     background-size: contain; /* Adjust this based on your image dimensions */
     animation: scroll-sideways 10s linear infinite; /* Scroll animation */
 }
@@ -68,7 +68,7 @@ header {
     width: 180px; /* Adjust to your pillar width */
     top: 10px; /* Space at the top */
     height: calc(100vh + 5%);
-    background: url('photos/pillar.png') no-repeat center/cover; /* Image styling */
+    background: url('pillar.png') no-repeat center/cover; /* Image styling */
     z-index: 10; /* Ensure it's above other elements */
     box-sizing: border-box; /* Account for padding/margins */
     overflow: hidden; /* Prevent content spill */
