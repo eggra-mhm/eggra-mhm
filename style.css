@@ -30,6 +30,37 @@ header {
     z-index: 0;
 }
 
+.lheader {
+    position: relative;
+    height: 75px; /* Adjust header height */
+    overflow: hidden; /* Hide overflow outside the header */
+ }
+ 
+
+ 
+ .scrolling-background-inner {
+    display: flex;
+    top: 10;
+    width: 200%; /* Twice the width for seamless scrolling */
+    height: 90px;
+    width: 200%;
+    animation: scroll-sideways 10s linear infinite;
+ }
+
+ .scrolling-background-inner img {
+    width: 50%;
+    height: auto;
+ }
+ 
+ @keyframes scroll-sideways {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+ }
+ 
 .logo {
     visibility: hidden;
     max-height: 100px;
@@ -37,38 +68,12 @@ header {
     width: auto;
 }
 
-.scrolling-header {
-    position: relative;
-    height: 75px; /* Adjust header height */
-    overflow: hidden; /* Hide overflow outside the header */
-}
-
-.scrolling-background {
-    position: absolute;
-    top: 1;
-    left: 0;
-    width: 200%; /* Twice the width for seamless scrolling */
-    height: calc(100vh + 10px);
-    background: url('wotc logo.svg') repeat-x; /* Tiling the image horizontally */
-    background-size: contain; /* Adjust this based on your image dimensions */
-    animation: scroll-sideways 10s linear infinite; /* Scroll animation */
-}
-
-@keyframes scroll-sideways {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
-}
-
 .pillar {
     position: fixed; /* Sticks to the viewport */
     width: 180px; /* Adjust to your pillar width */
     top: 10px; /* Space at the top */
     height: calc(100vh + 5%);
-    background: url('pillar.png') no-repeat center/cover; /* Image styling */
+    background: url('photos/pillar.png') no-repeat center/cover; /* Image styling */
     z-index: 10; /* Ensure it's above other elements */
     box-sizing: border-box; /* Account for padding/margins */
     overflow: hidden; /* Prevent content spill */
