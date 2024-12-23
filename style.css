@@ -48,7 +48,7 @@ header {
     top: 1;
     left: 0;
     width: 200%; /* Twice the width for seamless scrolling */
-    height: calc(90% - 10px);
+    height: calc(100vh + 10px);
     background: url('wotc logo.svg') repeat-x; /* Tiling the image horizontally */
     background-size: contain; /* Adjust this based on your image dimensions */
     animation: scroll-sideways 10s linear infinite; /* Scroll animation */
