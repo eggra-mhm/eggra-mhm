@@ -73,7 +73,7 @@ header {
     width: 180px; /* Adjust to your pillar width */
     top: 10px; /* Space at the top */
     height: calc(100vh + 5%);
-    background: url('photos/pillar.png') no-repeat center/cover; /* Image styling */
+    background: url('pillar.png') no-repeat center/cover; /* Image styling */
     z-index: 10; /* Ensure it's above other elements */
     box-sizing: border-box; /* Account for padding/margins */
     overflow: hidden; /* Prevent content spill */
