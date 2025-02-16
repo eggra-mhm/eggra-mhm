@@ -32,10 +32,11 @@
                     <h2>How it works:</h2>
                     <p>We bought a chair, and you can write on it in real time. The livestream will start at 00:00 PST on 00/00/0000. 
                     </p>
-                  <form id="emailForm" action="https://docs.google.com/forms/d/e/1FAIpQLScNGkSoizkDwihya2IYqv59yeFdieD8dNbzipHEDp7jpHBOzQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-                        <input type="email" name="entry.344889121" placeholder="Enter Your Email" required>
+                  <form id="emailForm">
+                        <input type="email" name="entry.344889121" id="emailInput" placeholder="Enter Your Email" required>
                         <button type="submit">Notify Me</button>
                     </form>
+                    <p id="message"></p> <!-- This will show a success message -->
                 </section>
 
                 <!-- Live Stream Section -->
