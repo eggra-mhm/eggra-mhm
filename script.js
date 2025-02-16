@@ -17,4 +17,3 @@ document.getElementById("emailForm").addEventListener("submit", function(event) 
         document.getElementById("emailInput").value = ""; // Clear the input
     }).catch(error => console.error("Error:", error));
 });
- 
